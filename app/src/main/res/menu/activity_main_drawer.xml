@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+            >
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/login"
+            android:visible="true" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/logout"
+            android:visible="false"/>
+
+
+        </group>
+
+    <item android:title="תפריט ראשי">
+        <menu>
+            <item
+                android:id="@+id/nav_shop_cart"
+                android:icon="@drawable/ic_shopping_cart_black_24dp"
+                android:title="@string/shop_cart"
+                android:visible="false"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_manager_menu"
+        android:title="תפריט מנהל"
+        android:visible="false"
+        >
+        <menu>
+            <item android:id="@+id/nav_manage_items"
+                  android:title="ניהול מוצרים"
+                  android:icon="@drawable/ic_menu_manage"
+                />
+            <item android:id="@+id/nav_manage_employees"
+                android:title="ניהול עובדים"
+                android:icon="@drawable/ic_menu_manage"/>
+            <!--
+            <item
+                android:id="@+id/nav_add_item"
+                android:icon="@drawable/ic_add_box_black_24dp"
+                android:title="@string/add_item"
+                android:visible="false"/>
+            <item
+                android:id="@+id/nav_order_supplier"
+                android:icon="@drawable/ic_airport_shuttle_black_24dp"
+                android:title="@string/order_supplier"
+                android:visible="false"/>
+            <item
+                android:id="@+id/nav_add_employee"
+                android:icon="@drawable/ic_person_add_black_24dp"
+                android:title="@string/add_employee"
+                android:visible="false"/>
+            <item
+                android:id="@+id/nav_fire_employee"
+                android:icon="@drawable/ic_sentiment_dissatisfied_black_24dp"
+                android:title="@string/fire_employee"
+                android:visible="false"/>
+            <item
+                android:id="@+id/nav_delete_item"
+                android:icon="@drawable/ic_remove_circle_black_24dp"
+                android:title="@string/delete_item"
+                android:visible="false"/>
+            -->
+        </menu>
+    </item>
+    -->
+</menu>

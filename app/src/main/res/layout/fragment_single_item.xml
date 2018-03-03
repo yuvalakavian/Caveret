@@ -1,0 +1,136 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yuvalmetal.caveret.Fragments.SingleItemFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/single_item_remove"
+            android:layout_width="61dp"
+            android:layout_height="34dp"
+            android:text="-"
+            android:layout_marginLeft="24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBaseline_toBaselineOf="@+id/single_item_selected_quantity" />
+
+        <ImageView
+            android:id="@+id/single_item_imageview"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="51dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_report_image"
+            tools:layout_editor_absoluteY="37dp" />
+
+        <TextView
+            android:id="@+id/single_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="27dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/single_item_imageview" />
+
+        <TextView
+            android:id="@+id/single_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="120dp"
+            android:text="@string/item_price"
+            app:layout_constraintBaseline_toBaselineOf="@+id/single_item_name"
+            app:layout_constraintRight_toLeftOf="@+id/single_item_name"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="46dp"
+            android:text="כמות זמינה:"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/single_item_name"
+            android:id="@+id/single_item_available_quantity" />
+
+        <TextView
+            android:id="@+id/single_item_available_quantity_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
+            android:text="0"
+            app:layout_constraintBaseline_toBaselineOf="@+id/single_item_available_quantity"
+            app:layout_constraintRight_toLeftOf="@+id/single_item_available_quantity" />
+
+        <Button
+            android:id="@+id/single_item_add"
+            android:layout_width="61dp"
+            android:layout_height="34dp"
+            android:layout_marginRight="44dp"
+            android:text="+"
+            app:layout_constraintBaseline_toBaselineOf="@+id/single_item_available_quantity"
+            app:layout_constraintRight_toLeftOf="@+id/single_item_available_quantity_value"
+            app:layout_constraintHorizontal_bias="0.48" />
+
+        <TextView
+            android:id="@+id/single_item_selected_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            app:layout_constraintBaseline_toBaselineOf="@+id/single_item_available_quantity"
+            app:layout_constraintRight_toLeftOf="@+id/single_item_add"
+            android:layout_marginRight="8dp"
+            app:layout_constraintLeft_toRightOf="@+id/single_item_remove"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <TextView
+            android:id="@+id/single_item_price_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="0"
+            android:textColor="@android:color/holo_green_light"
+            app:layout_constraintBaseline_toBaselineOf="@+id/single_item_price"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toRightOf="@+id/textView2"
+            app:layout_constraintRight_toLeftOf="@+id/single_item_price" />
+
+        <Button
+            android:id="@+id/single_item_add_to_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:text="הוסף לסל"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/single_item_add" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text='ש"ח'
+            app:layout_constraintBaseline_toBaselineOf="@+id/single_item_name"
+            app:layout_constraintLeft_toLeftOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

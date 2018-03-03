@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">כוורת</string>
+
+    <string name="nav_sub_title">מרכולית נוחות עבורך</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">התחבר</string>
+    <string name="login_username">שם משתמש</string>
+    <string name="login_password">סיסמא</string>
+    <string name="first_name">שם פרטי</string>
+    <string name="last_name">שם משפחה</string>
+    <string name="phone_number">מספר טלפון</string>
+
+    <string name="activity">ACTIVITY</string>
+
+    <string name="item_price">מחיר:</string>
+    <string name="item_total_price">מחיר כולל:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="caveret_items">
+        <item>במבה אסם</item>
+        <item>פסק זמן</item>
+        <item>כיף כיף עלית</item>
+        <item>חלב תנובה</item>
+    </string-array>
+
+    <string-array name="roles">
+        <!-- <item>Admin</item> -->
+        <item>Cashier</item>
+        <item>Cleaner</item>
+    </string-array>
+
+    <string name="API_URL">http://192.168.1.25:49699/api/</string>
+    <string name="SERVER_URL">http://192.168.1.25:49699/</string>
+    <string name="SERVER_IP_WITH_PORT">192.168.1.25:49699</string>
+    <string name="login">התחבר למערכת</string>
+    <string name="logout">התנתק</string>
+    <string name="shop_cart">סל קניות</string>
+    <string name="add_item">הוסף מוצר</string>
+    <string name="order_supplier">הזמן מספק</string>
+    <string name="add_employee">הוסף עובד</string>
+    <string name="fire_employee">פטר עובדים</string>
+    <string name="delete_item">הסר מוצרים</string>
+    <string name="action_search">חפש</string>
+
+    <string name="search_hint">חפש</string>
+    <string name="title_activity_manage_items">ManageItemsActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="delete_item_dialog_message">האם הנך בטוח שברצונך למחוק מוצר זה?</string>
+    <string name="delete_item_dialog_ok">מחק לעד(לא באמת)</string>
+    <string name="delete_item_dialog_cancel">אני עדיין בקטע של זה</string>
+    <string name="title_activity_manage_employees">ManageEmployeesActivity</string>
+
+
+</resources>
